@@ -127,7 +127,7 @@ class PraktikantasDarbuotojas extends Darbuotojas{
     }
 
     public override get atlyginimas(){
-        return this._atlyginimas;
+        return this._atlyginimas=0;
     }
 
     public override gpm(){
@@ -147,3 +147,4 @@ let intern = new PraktikantasDarbuotojas('Intern', 'Intertaitis');
 console.log(intern.gpm());
 console.log(intern.psd());
 console.log(intern.vsd());
+console.log(intern.vardas);

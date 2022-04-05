@@ -131,7 +131,7 @@ var PraktikantasDarbuotojas = /** @class */ (function (_super) {
     });
     Object.defineProperty(PraktikantasDarbuotojas.prototype, "atlyginimas", {
         get: function () {
-            return this._atlyginimas;
+            return this._atlyginimas = 0;
         },
         enumerable: false,
         configurable: true
@@ -151,3 +151,4 @@ var intern = new PraktikantasDarbuotojas('Intern', 'Intertaitis');
 console.log(intern.gpm());
 console.log(intern.psd());
 console.log(intern.vsd());
+console.log(intern.vardas);
