@@ -70,7 +70,7 @@ constructor(
     super(_vardas, _pavarde, _atlyginimas);
     this.perskaiciuotiNPD();
 }
-public set atlyginimas(atlyginimas:number){
+override set atlyginimas(atlyginimas:number){
     this._atlyginimas=atlyginimas;
     this.perskaiciuotiNPD();
 }
