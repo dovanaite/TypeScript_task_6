@@ -62,6 +62,7 @@ darbuotojai.forEach((darbuotojas:Darbuotojas)=>{
 class PirmaeilisDarbuotojas extends Darbuotojas{
 
 protected npd:number = 0;
+
 constructor(
     _vardas:string,
     _pavarde:string,
@@ -70,7 +71,8 @@ constructor(
     super(_vardas, _pavarde, _atlyginimas);
     this.perskaiciuotiNPD();
 }
-override set atlyginimas(atlyginimas:number){
+
+public override set atlyginimas(atlyginimas:number){
     this._atlyginimas=atlyginimas;
     this.perskaiciuotiNPD();
 }
@@ -112,19 +114,19 @@ class PraktikantasDarbuotojas extends Darbuotojas{
         super(_vardas, _pavarde,_atlyginimas);
     }
 
-    public get vardas(){
+    public override get vardas(){
         return this._vardas;
     }
 
-    public set vardas(vardas:string){
+    public override set vardas(vardas:string){
         this._vardas=vardas;
     }
 
-    public set pavarde(pavarde:string){
+    public override set pavarde(pavarde:string){
         this._pavarde=pavarde;
     }
 
-    public get atlyginimas(){
+    public override get atlyginimas(){
         return this._atlyginimas;
     }
 
